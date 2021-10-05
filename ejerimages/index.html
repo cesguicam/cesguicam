@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGES</title>
+</head>
+<!--style="background-image: url('images/salmon.jpg') ;"--> <!--esto es para poner un fondo a una pagina con una imagen,
+     tambien se puede usar background color pero es menos versatil-->
+<!--<body style="background-image: url('images/salmon.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;" >-->
+   
+<body style="background: url('images/salmon.jpg') no-repeat center fixed;">
+    <h3>IMAGES</h3>
+    <!--
+    <img src="images/google.jpg"
+     alt="imagen de google"
+    style="width: 300px; height: 200px;">
+    -->
+    <img src="images/google.jpg"
+        alt="imagen google" usemap="#letras" ismap="ismap">
+    <map name="letras" id="letras">
+        <area shape="rect" coords="10,65,103,190" href="http://www.google.es" target="_blank">
+        <area shape="circle" coords="155,135,40" href="https://developer.mozilla.org/en-US/docs/Web/CSS/background" target="_blank">
+    </map>
+</body>
+</html>
