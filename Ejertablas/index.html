@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLAS</title>
+</head>
+
+<body>
+    <table rules="groups" style="border: 2px dotted rgb(196, 37, 211); border-collapse: collapse;"> <!--rules group es para qie divida los grupos de la tabla-->
+        <!-- el border-collapse es para que se aplique el estilo en la fila-->
+        <caption>Horario de clases</caption>
+        <thead><!--cabecera de la tabla-->
+            <tr style="border: 2px dotted rgb(124, 71, 129);"><!-- filas de una tabla-->
+                <th style="border: 2px dotted rgb(9, 255, 0);"><!-- columnas de una tabla dentro de la fila anterior-->
+                    <span>Lunes</span>
+                    <br>
+                    <!--si quiero poner uno debajo de otro en la comumna tengo que poner el br-->
+                    <span>Lunes</span>
+                </th>
+                <th><span>Martes</span></th>
+                <th>Miercoles</th><!-- th hace lo mismo que td pero en negrita-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!--para combinar celdas se utiliza el colspan haciendo que una columba ocupe la el tamaño de  dos-->
+                <td colspan="2" style="text-align: center;"><span>1 - 2</span></td>
+                <td rowspan="2" style="text-align: center;"><span>3 - 6</span></td>
+            </tr>
+            <tr>
+                <td><span>4</span></td>
+                <td><span>5</span></td>
+            </tr>
+            <tr>
+                <td><span>7</span></td>
+                <td><span>8</span></td>
+                <td>
+                    <table style="border: 1px solid black;">
+                        <caption> Otra tabla</caption>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <span>INICIO</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span>1234568989797</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot> <!--pie de la tabla-->
+            <tr>
+                <td><span>12</span></td>
+                <td><span>15</span></td>
+                <td><span>18</span></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
