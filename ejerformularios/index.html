@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script>
+        function pasarAMasus(campo){
+            campo.value = campo.value.toUpperCase();
+        }
+    </script>
+</head>
+
+<body>
+    <div style="width: 600px; margin: 0 auto;">
+        <h2>Fomulario</h2>
+        <form action="registro.php" method="get">
+            <!--etiqueta para formulario ("action" indica la pagina de destino de los datos del formulario)
+                                                ("method"get o post: get es para formularios sin datos confidencial, si se manda con post la informacion viaja pero no se ve en la url)
+                                                -->
+            <table>
+                <tr>
+                    <td>
+                        <label for="Nombre">Nombre</label>
+                    </td>
+                    <td> <!--readonly solamente te daja leer; el autofocus es importante porque hace que el usuario sea mas rapido poniendo el cursor diretamente en el primer campo, solo y unicamente hay que ponerlo en el primer campo-->
+                        <input type="text"
+                        name="Nombre"
+                        id="Nombre"
+                        value="Usuario"
+                        placeholder="introduzca nombre"
+                        onkeyup="pasarAMasus(this)"
+                        autofocus
+                        size="50"
+                        maxlength="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Apellidos
+                    </td>
+                    <td>
+                        <input type="text" name="apellidos">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass">Password</label>
+                    </td>
+                    <td>
+                        <input type="password" name="pass" id="pass">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pregunta"> ¿Mayor de edad?</label>
+
+                    </td>
+                    <td>
+                        <input type="radio" name="pregunta" id="pregunta" value="Sí" checked><span>Sí</span>
+                        <input type="radio" name="pregunta" id="pregunta" value="No"><span>No</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="aficiones">Aficiones</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="deporte" id="deporte" value="D" checked><span>Deporte</span>
+                        <input type="checkbox" name="cine" id="cine" value="C"><span>Cine</span>
+                        <input type="checkbox" name="viajar" id="viajar" value="V"><span><span></span>Viajar</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="provincia">Provincia</label></td>
+                    <td>
+                        <select name="provincia" id="provincia">
+                            <option value="-1">Seleccione Provincia</option>
+                            <optgroup label="Zona centro">
+                                <option value="41">Sevilla</option>
+                            </optgroup>
+                            <option value="41">Sevilla</option><!--los numeros del value son los que captura el servidor php, de momento no importa-->
+                            <option value="39">Cadiz</option>
+                            <option value="27">Huelva</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fichero">Fichero</label>
+                    </td>
+                    <td>
+                        <input type="file" name="fichero" id="fichero">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="descricion">Decripción</label></td>
+                    <td>
+                        <textarea name="decripcion" id="decripcion" rows="10" cols="50" placeholder="introduzca su queja"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="edad">Edad</label></td>
+                    <td><input type="number" name="edad" id="edad" maxlength="5" max="10" min="0"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td>
+                        <input type="email" name="email" id="email" required> <!--required no permite mandar el formulario sin rellenar los campos donde esté-->
+                        <br>
+                        <input type="url" name="url" id="url" required value="http://">
+                        <br>
+                        <input type="search" name="busqueda" id="busqueda" required>
+                        <br>
+                        <input type="tel" name="telefono" id="telefono" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="reset"></td>
+                    <td> <input type="submit" value="enviar usuario"></td>
+                    <td><input type="button" name="boton" id="boton" value="ocultar"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
