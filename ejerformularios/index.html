@@ -42,7 +42,7 @@
                         Apellidos
                     </td>
                     <td>
-                        <input type="text" name="apellidos">
+                        <input type="text" name="apellidos" id="apellidos" pattern="[A-Z]{10}[0-9]{2}" required>
                     </td>
                 </tr>
                 <tr>
@@ -120,10 +120,21 @@
                     <td></td>
                 </tr>
                 <tr>
+                    <td><label for="fechas">Fechas</label></td>
+                    <td>
+                        <input type="date" name="fecha1" id="fecha1">
+                        <input type="datetime" name="fecha2" id="fecha2">
+                        <input type="datetime-local" name="fecha3" id="fecha3">
+                        <input type="time" name="fecha4" id="fecha4">
+                        <input type="month" name="fecha5" id="fecha5">
+                    </td>
+                </tr>
+                <tr>
                     <td><input type="reset"></td>
                     <td> <input type="submit" value="enviar usuario"></td>
                     <td><input type="button" name="boton" id="boton" value="ocultar"></td>
                 </tr>
+                
             </table>
         </form>
     </div>
