@@ -5,7 +5,7 @@
 
 h1 {
     font: bold 20px verdana, sans-serif;
-    color: aqua;
+    color: brown;
 }
 
 h2 {
@@ -33,10 +33,22 @@ body{
 }
 
 #head {
-    background-color: darkgreen;/* */
-    border: 10px solid rgb(197, 65, 180);
+    background-color: rgb(87, 214, 87);/* */
     padding: 20px;
     height: 80px;
+}
+#menu{
+    background: cornflowerblue;
+    border: 1px solid black;
+    
+}
+
+#menu li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    border-right: 1px solid black;
+    
 }
 
 #div1{
@@ -52,19 +64,44 @@ body{
 #subtitulo {
     display: block; /* esto es para "crear" un bloque independiente*/
     margin-top: 20px;
-    color: white;
+}
+#general {
+    background-color: rgb(255, 221, 177);
+}
+#capa1 {
+    background-color: rgb(255, 167, 134);
 }
 
-#menu{
-    background: lemonchiffon;
-    padding: 5px 15px;
+#capa1 span {
+    display: block;
+    padding: 10px;
 }
 
-#menu li {
-    display: inline-block;
-    list-style: none;
-    padding: 5px;
-    border: 1px solid black;
+#capa1 h1 {
+    color:rgb(56, 102, 145);
+    padding: 10px;
+}
+#capa2 {
+    background-color: rgb(255, 150, 111);
+}
+#capa3 {
+    width: 660px;
+    height: 300px;
+    background-color: rgb(146, 75, 75);
+    border-radius: 10px 10px 10px 10px;
+}
+#texto1 {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#capa4 {
+    background-color: rgb(255, 150, 111);
+}
+#c4 {
+    float: left;
+    color:rgb(56, 102, 145);
+    margin-top: -10px;
 }
 
 #main {
@@ -77,9 +114,66 @@ body{
     float: left;
     width: 220px;
     margin: 20px 0px;
-    padding: 20px;
-    background: magenta;
 }
+#capa5 {
+    background: rgb(190, 190, 190);
+}
+
+#d1 {
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid black;
+    height: 50px;
+}
+#d1 div {
+    background-color: rgb(141, 141, 141);
+    border-radius: 3px 3px 0px 0px;
+}
+
+#i {
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+#d2 {
+    display: block;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid black;
+    height: 300px;
+    
+}
+#d2 div {
+    background-color: rgb(141, 141, 141);
+    border-radius: 3px 3px 0px 0px;
+}
+#im1{
+   width: 218px;
+   height: 280px;
+}
+#d3 {
+    display: block;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid black;
+    height: 100px;
+    
+}
+#d3 div {
+    background-color: rgb(141, 141, 141);
+    border-radius: 3px 3px 0px 0px;
+}
+
+#list{
+    color: blue;
+}
+#punto{
+    margin-left: 20px;
+}
+
+
+
+
+
 
 #foot {
     clear: both;
