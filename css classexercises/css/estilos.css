@@ -1,0 +1,17 @@
+a{
+    color: crimson;
+}
+#primero {
+    color: cyan;
+}
+#em {
+    background-color: rgb(175, 247, 235);
+    color: blue;
+}
+.especial{
+    background-color: black;
+    color: yellow;
+}
+p span{
+    font-weight: bold;
+}
