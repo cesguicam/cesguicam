@@ -1,0 +1,30 @@
+.cuerpo{
+    width: 500px;
+}
+#cabecera {
+    background-color: rgb(51, 49, 49);
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#menu li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px;   
+    
+   
+}
+#capa{
+
+    background-color: rgb(51, 49, 49);
+}
+#capa1 {
+    margin-top: -20px;
+    background-color: gray;
+}
+#enlace3 {
+    background-color: rgb(83, 77, 77);
+    padding: 10px;
+
+}
