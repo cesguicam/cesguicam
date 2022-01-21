@@ -1,0 +1,97 @@
+/*
+Este comentario aparece en css
+*/
+/* line 10, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+body {
+  background-color: #C0C0C0;
+  color: #51527F;
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 16, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+.clase-1 {
+  color: #555555;
+}
+
+/* line 16, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+.clase-2 {
+  color: #aaaaaa;
+}
+
+/* line 16, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+.clase-3 {
+  color: white;
+}
+
+/* line 30, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+.info {
+  display: inline-block;
+}
+
+/* line 38, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+.col-4 {
+  width: 80px;
+  left: 240px;
+}
+
+/* line 38, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+.col-3 {
+  width: 80px;
+  left: 160px;
+}
+
+/* line 38, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+.col-2 {
+  width: 80px;
+  left: 80px;
+}
+
+/* line 38, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+.col-1 {
+  width: 80px;
+  left: 0px;
+}
+
+/* line 48, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+.social-links .icon-facebook {
+  background-image: url("images/facebook.png");
+}
+
+/* line 48, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+.social-links .icon-twitter {
+  background-image: url("images/twitter.png");
+}
+
+/* line 48, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+.social-links .icon-linkedir {
+  background-image: url("images/linkedir.png");
+}
+
+/* line 48, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+.social-links .icon-reddit {
+  background-image: url("images/reddit.png");
+}
+
+/* line 62, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: o;
+  right: o;
+  background-color: #C0C0C0;
+}
+
+/* line 71, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+.rectangulo {
+  width: 100px;
+  height: 80px;
+}
+
+/* line 75, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+.cubo {
+  width: 50px;
+  height: 40px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
