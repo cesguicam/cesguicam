@@ -1,0 +1,22 @@
+$primary-color: #C0C0C0;
+$secondary-color: red;
+$colors: white;
+$colors2: black;
+
+body {
+    background-color: $primary-color;
+}
+header{
+    color: $secondary-color;
+}
+li{
+    display: inline;
+    padding-left: 5px;
+}
+a{
+    color: $colors2;
+    text-decoration: none;
+}
+.info{
+    color: $colors;
+}

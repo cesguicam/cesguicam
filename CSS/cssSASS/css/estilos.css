@@ -94,4 +94,42 @@ div {
   height: 40px;
 }
 
+/* line 82, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+.micapa {
+  width: 31.25%;
+}
+
+/* line 86, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+.display, .display-succes {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #51527F;
+}
+
+/* line 90, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+.display-succes {
+  border-color: #C0C0C0;
+}
+
+/* line 95, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+ul {
+  list-style-type: none;
+  margin-top: 2cm;
+}
+
+/* line 99, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+ul li {
+  background-color: blue;
+}
+
+/* line 102, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+ul li:hover {
+  background-color: chartreuse;
+}
+
+/* line 106, D:/REPOSITORIO/cesguicam/CSS/cssSASS/sass/estilos.scss */
+ul li a {
+  color: white;
+}
+
 /*# sourceMappingURL=estilos.css.map */

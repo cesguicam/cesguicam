@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "estilos.css",
+	"sources": [
+		"../sass/estilos.scss"
+	],
+	"sourcesContent": [
+		"$primary-color: #C0C0C0;\r\n$secondary-color: red;\r\n$colors: white;\r\n$colors2: black;\r\n\r\nbody {\r\n    background-color: $primary-color;\r\n}\r\nheader{\r\n    color: $secondary-color;\r\n}\r\nli{\r\n    display: inline;\r\n    padding-left: 5px;\r\n}\r\na{\r\n    color: $colors2;\r\n    text-decoration: none;\r\n}\r\n.info{\r\n    color: $colors;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAKA,AAAA,IAAI,CAAC;EACD,gBAAgB,EANJ,OAAO;CAOtB;;;AACD,AAAA,MAAM,CAAA;EACF,KAAK,EARS,GAAG;CASpB;;;AACD,AAAA,EAAE,CAAA;EACE,OAAO,EAAE,MAAM;EACf,YAAY,EAAE,GAAG;CACpB;;;AACD,AAAA,CAAC,CAAA;EACG,KAAK,EAbC,KAAK;EAcX,eAAe,EAAE,IAAI;CACxB;;;AACD,AAAA,KAAK,CAAA;EACD,KAAK,EAlBA,KAAK;CAmBb"
+}
