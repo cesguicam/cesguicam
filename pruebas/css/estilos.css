@@ -1,0 +1,13 @@
+#letra::first-letter{
+    font-size: 120px;
+    color: blue;
+}
+.contenedor{
+    width: 500px;
+    background-color: aquamarine;
+}
+#menu li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+}

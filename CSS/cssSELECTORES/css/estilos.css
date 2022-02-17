@@ -24,7 +24,7 @@ p#miparrafo::first-line{/*:: es una seudoclase (se aplica a la p`rimera linea de
     font-weight: bold;
 }
 p#miparrafo::first-letter{
-    font-size: 60px;
+    font-size: 100px;
     color: blue;
     font-family: monospace;
 }

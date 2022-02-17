@@ -1,0 +1,46 @@
+#contenedor{
+    width: 800px;
+}
+.capa1{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    padding: 20px;
+}
+.negro{
+    display: block;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.capa2{
+    width: 375px;
+    border: 1px solid black;
+    float: left;
+    padding-right: 20px;
+}
+.azul{
+    color: blue;
+}
+
+
+.subcapa2{
+    background-color: rgb(66, 66, 66);
+    
+}
+.subcapa2>span{
+    text-align: center;
+    margin: 0px auto;
+}
+#clavo{
+    float:left;
+    padding: 20px;
+    display: block;
+}
+.capa3{
+    border: 1px solid black;
+    display: block;
+    padding-right: 40px;
+}
+
+.verde{
+    color: green;
+}

@@ -12,7 +12,7 @@ h1, h2 {
     display: none;
 }
 b#tconf ::first-letter{
-    font-size: 60px;
+    font-size: 600px;
 }
 a{
     color: yellow

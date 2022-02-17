@@ -1,0 +1,29 @@
+h2,span{
+    font-style: italic;
+}
+#data{
+    background-color: grey;
+    color: black;
+}
+
+.capa>span{
+    font-weight: bold;
+}
+.segundo:hover{
+    background-color: aqua;
+}
+.segundo::first-letter{
+    font-size: 120px;
+}
+a[href$="com"]{
+    color: blue;
+}
+a[href$="es"]{
+    color: red;
+}
+#lista:hover {
+    font-size: xx-large;
+}
+ul::first-letter{
+    background-color: gray;
+}
