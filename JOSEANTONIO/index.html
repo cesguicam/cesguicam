@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Antonio</title>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").style.color = "red";
+        }
+    </script>
+    <script>
+        function miFunc(a) {
+            document.getElementById("demo").style.color = a;
+        }
+
+        function activa(b) {
+            document.getElementById(b).style.color = document.getElementById("demo").style.color;
+        }
+
+        function graba(b) {
+            /* 
+             set fso = CreateObject("Scripting.FileSystemObject"); 
+               set s   = fso.CreateTextFile(b, True);
+            
+               //var firstName = document.getElementById('FirstName');
+              // var lastName  = document.getElementById('lastName');
+            
+               s.writeline("verde" );
+               s.writeline("azult");
+            
+               s.writeline("-----------------------------");
+               s.Close();
+               */
+            alert('grabado');
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h1>Desarrollo de Vlans en Switchs</h1>
+    <h2>Evento Onclick</h2>
+
+    <h3 id="demo" onclick="myFunction()">Color de Vlan.</h3>
+
+
+
+    <button id="rojo" onclick="miFunc('red')">Rojo</button>
+    <button id="verde" onclick="miFunc('green')">Verde</button>
+    <button id="azul" onclick="miFunc('blue')">Azul</button>
+   
+
+    <br>
+    <h2>SWITCH 1 </h2>
+    <table>
+        <tr>
+            <td style="padding: 5px;">
+                <button id="sw1trunk" onclick="miFunc('red')">Switch1 Trunk</button>
+                <button id="sw1access" onclick="miFunc('red')">Switch1 Access</button>
+            </td>
+        </tr>
+        <tr>
+            <td id="fila1" style="padding: 5px;">
+                <button id="b1" onclick="activa('b1')">01</button>
+                <button id="b2" onclick="activa('b2')">02</button>
+                <button id="b3" onclick="activa('b3')">03</button>
+                <button id="b4" onclick="activa('b4')">04</button>
+                <button id="b5" onclick="activa('b5')">05</button>
+                <button id="b6" onclick="activa('b6')">06</button>
+                <button id="b7" onclick="activa('b7')">07</button>
+                <button id="b8" onclick="activa('b8')">08</button>
+                <button id="b9" onclick="activa('b9')">09</button>
+                <button id="b10" onclick="activa('b10')">10</button>
+                <button id="b11" onclick="activa('b11')">11</button>
+                <button id="b12" onclick="activa('b12')">12</button>
+                <button id="b13" onclick="activa('b13')">13</button>
+                <button id="b14" onclick="activa('b14')">14</button>
+                <button id="b15" onclick="activa('b15')">15</button>
+                <button id="b16" onclick="activa('b16')">16</button>
+                <button id="b17" onclick="activa('b17')">17</button>
+                <button id="b18" onclick="activa('b18')">18</button>
+                <button id="b19" onclick="activa('b19')">19</button>
+                <button id="b20" onclick="activa('b20')">20</button>
+                <button id="b21" onclick="activa('b21')">21</button>
+                <button id="b22" onclick="activa('b22')">22</button>
+                <button id="b23" onclick="activa('b23')">23</button>
+                <button id="b24" onclick="activa('b24')">24</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="padding: 5px;">
+                <button id="b25" onclick="activa('b25')">25</button>
+                <button id="b26" onclick="activa('b26')">26</button>
+                <button id="b27" onclick="activa('b27')">27</button>
+                <button id="b28" onclick="activa('b28')">28</button>
+                <button id="b29" onclick="activa('b29')">29</button>
+                <button id="b30" onclick="activa('b30')">30</button>
+                <button id="b31" onclick="activa('b31')">31</button>
+                <button id="b32" onclick="activa('b32')">32</button>
+                <button id="b33" onclick="activa('b33')">32</button>
+                <button id="b34" onclick="activa('b34')">34</button>
+                <button id="b35" onclick="activa('b35')">35</button>
+                <button id="b36" onclick="activa('b36')">36</button>
+                <button id="b37" onclick="activa('b37')">37</button>
+                <button id="b38" onclick="activa('b38')">38</button>
+                <button id="39" onclick="activa('39')">39</button>
+                <button id="40" onclick="activa('40')">40</button>
+                <button id="41" onclick="activa('41')">41</button>
+                <button id="42" onclick="activa('42')">42</button>
+                <button id="43" onclick="activa('43')">43</button>
+                <button id="44" onclick="activa('44')">44</button>
+                <button id="45" onclick="activa('45')">45</button>
+                <button id="46" onclick="activa('46')">46</button>
+                <button id="47" onclick="activa('47')">47</button>
+                <button id="48" onclick="activa('48')">48</button>
+            </td>
+        </tr>
+        <br>
+
+    </table>
+    <br>
+    <h2>SWITCH 2 </h2>
+
+    <table>
+        <tr>
+            <td style="padding: 5px;">
+                <button id="sw2trunk" onclick="miFunc('red')">Switch2 Trunk</button>
+                <button id="sw2access" onclick="miFunc('red')">Switch2 Access</button>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;">
+                <button id="c1" onclick="activa('c1')">01</button>
+                <button id="c2" onclick="activa('c2')">02</button>
+                <button id="c3" onclick="activa('c3')">03</button>
+                <button id="c4" onclick="activa('c4')">04</button>
+                <button id="c5" onclick="activa('c5')">05</button>
+                <button id="c6" onclick="activa('c6')">06</button>
+                <button id="c7" onclick="activa('c7')">07</button>
+                <button id="c8" onclick="activa('c8')">08</button>
+                <button id="c9" onclick="activa('c9')">09</button>
+                <button id="c10" onclick="activa('c10')">10</button>
+                <button id="c11" onclick="activa('c11')">11</button>
+                <button id="c12" onclick="activa('c12')">12</button>
+                <button id="c13" onclick="activa('c13')">13</button>
+                <button id="c14" onclick="activa('c14')">14</button>
+                <button id="c15" onclick="activa('c15')">15</button>
+                <button id="c16" onclick="activa('c16')">16</button>
+                <button id="c17" onclick="activa('c17')">17</button>
+                <button id="c18" onclick="activa('c18')">18</button>
+                <button id="c19" onclick="activa('c19')">19</button>
+                <button id="c20" onclick="activa('c20')">20</button>
+                <button id="c21" onclick="activa('c21')">21</button>
+                <button id="c22" onclick="activa('c22')">22</button>
+                <button id="c23" onclick="activa('c23')">23</button>
+                <button id="c24" onclick="activa('c24')">24</button>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;">
+                <button id="c25" onclick="activa('c25')">25</button>
+                <button id="c26" onclick="activa('c26')">26</button>
+                <button id="c27" onclick="activa('c27')">27</button>
+                <button id="c28" onclick="activa('c28')">28</button>
+                <button id="c29" onclick="activa('c29')">29</button>
+                <button id="c30" onclick="activa('c30')">30</button>
+                <button id="c31" onclick="activa('c31')">31</button>
+                <button id="c32" onclick="activa('c32')">32</button>
+                <button id="c33" onclick="activa('c33')">32</button>
+                <button id="c34" onclick="activa('c34')">34</button>
+                <button id="c35" onclick="activa('c35')">35</button>
+                <button id="c36" onclick="activa('c36')">36</button>
+                <button id="c37" onclick="activa('c37')">37</button>
+                <button id="c38" onclick="activa('c38')">38</button>
+                <button id="c39" onclick="activa('c39')">39</button>
+                <button id="c40" onclick="activa('c40')">40</button>
+                <button id="c41" onclick="activa('c41')">41</button>
+                <button id="c42" onclick="activa('c42')">42</button>
+                <button id="c43" onclick="activa('c43')">43</button>
+                <button id="c44" onclick="activa('c44')">44</button>
+                <button id="c45" onclick="activa('c45')">45</button>
+                <button id="c46" onclick="activa('c46')">46</button>
+                <button id="c47" onclick="activa('c47')">47</button>
+                <button id="c48" onclick="activa('c48')">48</button>
+            </td>
+        </tr>
+        <br>
+        <tr>
+            <td style="padding-left: 5px; padding-top: 5px;">
+                <button id="GRABA" onclick="graba('config.txt')">GRABA CONFIGURACION</button>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
