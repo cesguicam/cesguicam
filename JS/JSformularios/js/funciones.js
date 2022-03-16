@@ -12,7 +12,7 @@ function validar(campo) {
 
 }
 
-function mostrarError (nombreSpan, mensaje) {  //campo es spnombre por que en mostrar error sale lo hemos pueto el primero, y mensaje es error:..
+function mostrarError (nombreSpan, mensaje) {  //campo es spnombre por que en mostrar error sale lo hemos puesto el primero, y mensaje es error:..
     document.getElementById(nombreSpan).innerHTML = mensaje;
 }
 function borrarError(nombreSpan){
