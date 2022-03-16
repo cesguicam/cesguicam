@@ -43,7 +43,7 @@ a[href$="es"]{/* que termine*/
 a[href*="triana"]{/*que contenga*/
     background-color: darkblue;
 }
-div + p { /* se aplica a todos los parrafos que vayab justo despues de una capa*/
+div + p { /*se aplica a todos los parrafos que vayab justo despues de una capa*/
     font-size: 80px;
 }
 ul#lista li:first-child{
