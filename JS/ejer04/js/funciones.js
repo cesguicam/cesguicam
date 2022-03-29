@@ -4,9 +4,11 @@ function calcular(){
 
 if(n1 > n2){
     document.getElementById("resultado").innerHTML = "El mayor numero es " + n1 + " y el menor es " + n2
-} else if (n1 < n2){
-    document.getElementById("resultado").innerHTML = "El menor numero es " + n1 + " y el mayor es " + n2
-}else{
+} else if (n2 > n1){
+    document.getElementById("resultado").innerHTML = "El mayor numero es " + n2 + " y el menor es " + n1
+}else if(n1!="" || n2!=""){
     document.getElementById("resultado").innerHTML = n1+" y  " + n2 +" Son iguales"
+}else {
+    document.getElementById("resultado").innerHTML = "Introduzca un numero, master."
 }
 }

@@ -5,6 +5,6 @@ function calcular(){
 
     resultado=Math.pow(base,ex);
 
-    document.getElementById("resultado").innerHTML="El resultado es:" + resultado;
+    document.getElementById("resultado").innerHTML="El resultado es: " + resultado;
 
 }

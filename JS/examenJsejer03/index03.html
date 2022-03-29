@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 Examen JS</title>
+    <script type="text/javascript" src="js/funciones03.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <label for="viaje">Viajar a: </label>
+            </td>
+            <td>
+                <input type="text" name="viaje" id="viaje">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="kms">Kilometros: </label>
+            </td>
+            <td>
+                <input type="number" name="kms" id="kms">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="gasolina">Precio gasolina/Kms: </label>
+            </td>
+            <td>
+                <input type="number" name="gasolina" id="gasolina">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="calcular" onclick="calcular()">
+            </td>
+        </tr>
+    </table>
+    <div>
+        <span id="resultado"></span>
+    </div>
+</body>
+</html>

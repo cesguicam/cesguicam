@@ -1,15 +1,17 @@
 .success {
     border: 2px solid green;
-    color: white;
     background-color: green;
+    color: black;
 }
+
 .error {
     border: 2px solid red;
-    color: white;
     background-color: red;
+    color: black;
 }
+
 .warning {
     border: 2px solid yellow;
-    color: white;
     background-color: yellow;
+    color: black;
 }

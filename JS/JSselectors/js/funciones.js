@@ -35,7 +35,7 @@ function mostrarTexto(texto) {
 }
 
 function mostrarMensaje() {
-    document.getElementById("texto").innerHTML = "Hola";
+    document.getElementById("texto").innerHTML = "Hola wacho" + "<br>";
     document.getElementById("texto").className = "borderYcolor";
 }
 
