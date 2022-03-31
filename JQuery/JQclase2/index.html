@@ -54,6 +54,24 @@
                 return false;
             });
 
+            $("input#insertar").click(function () {
+                //$("#capa1").html("<p style='font-weight: bold'>TEXTO</p>") 
+                $("#capa1").prepend("<p> Al Inicio</p>")
+                $("#capa1").append("<p> Al Final</p>")
+                $("#capa1").before("<p> ANTES</p>")
+                $("#capa1").after("<p> Despues</p>")
+                $("#capa2").text("TEXTO")
+                $("#capa2").replaceWith("OTRO TEXTO")
+            });
+
+            $("#checkmail").click(function () {
+               if ($(this).is(":checked")) {
+                   $("#capamail").append("<input type='email' id='myemail'>");
+               } else {
+                   $("#myemail").remove();
+               }
+            });
+
         });
        
 
@@ -113,6 +131,18 @@
         <input type="checkbox" id="chequeo" value="Si" checked="checked"> si <br>
         <button id="desmarcar">Desmarcar</button>
     </form>
+
+    <br>
+
+    <input type="button" value="Insertar" id="insertar">
+    <br>
+    <div id="capa1"></div>
+    <br>
+    <div id="capa2"></div>
+    <br>
+    <div id="capamail">
+        <input type="checkbox" id="checkmail">¿Email?
+    </div>
 </body>
 
 </html>
