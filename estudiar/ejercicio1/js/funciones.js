@@ -1,8 +1,10 @@
 $(document).ready(function () {
     $("h1#nivel1").click(function () {
-        $(this).toggleClass("uno");
+        $("#nivel1").addClass("uno");
+        $(".nivel2").removeClass("dos");
     });
     $("h1.nivel2").click(function () {
-        $(this).toggleClass("dos");
+        $(".nivel2").addClass("dos");
+        $("#nivel1").removeClass("uno");
     });
 });

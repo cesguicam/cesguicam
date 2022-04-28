@@ -13,16 +13,30 @@
     <script>
         $(document).ready(function () {
             $("#b1").click(function () {
-               $("#tabla").css("border", "solid"); 
+               $("table#tabla").css("border", "solid"); 
             });
             $("#b2").click(function () {
                 var lel=$("#tabla").attr("style");
                 $("#s").text(lel);
             });
             $("#b3").click(function () {
-               $("#tabla").css("border","none"); 
+               $("table#tabla").css("border","none"); 
             });
         });
+
+
+        $("#esteBoton").click(function () {
+        $(".tabla").css("border", "solid");
+    });
+
+    $("button.otroBoton").click(function () {
+        var estilo = $("table").attr("style");
+        $("#res").text(estilo);
+    });
+
+    $("#Botonazo").click(function () {
+        $(".tabla").css("border", "none");
+    });
     </script>
 
     <style>
