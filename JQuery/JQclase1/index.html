@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQuery</title>
-    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -14,7 +14,7 @@
             $("#dos").css("border", "1px solid black");
             
             //seleccion por nombre de etiqueta
-            $("div").css("background", "blue");
+            $("div").css("background", "brown");
 
             //Selecion por clases
             $(".uno").css("font-weight", "bold");
@@ -34,11 +34,11 @@
             //selecionar todos los hermanos de un elemento
             $("li.one ~ li").css("border","1px solid black");
 
-            //selecccionar el hermano siguiente o inmd¡ediatamente siguente 
-            $("li.thre + li").css("background", "red");
+            //selecccionar el hermano siguiente o inmediatamente siguente 
+            $("li.thre + li").css("background", "salmon");
 
             //selecionar la primera fila de la tabla
-            $("tr:first").css("background", "red");
+            $("tr:first").css("background", "green");
 
             //selecionar el ultimo td
             $("td:last").css("background", "red");
@@ -84,7 +84,7 @@
            $("p:has(a)").css("background", "yellow");
 
            //seleccionar todos los parrafos visibles
-           $("p:visible").css("background", "red");
+           //$("p:visible").css("background", "blue");
 
            $("button").click(function () {
                $("p:hidden").css("background", "pink").show();

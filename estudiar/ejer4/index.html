@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function () {
+               $("#tabla").css("border", "solid"); 
+            });
+            $("#b2").click(function () {
+                var lel=$("#tabla").attr("style");
+                $("#s").text(lel);
+            });
+            $("#b3").click(function () {
+               $("#tabla").css("border","none"); 
+            });
+        });
+    </script>
+
+    <style>
+        .borde{
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+<table id="tabla">
+    tabla
+</table>
+<button id="b1">Añadir Borde</button>
+<button id="b2">Ver propiedad</button>
+<button id="b3">Eliminar borde</button>
+
+<span id="s"></span>
+</body>
+
+</html>
