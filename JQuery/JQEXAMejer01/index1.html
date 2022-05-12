@@ -13,17 +13,13 @@
          $(document).ready(function () {
             $("a").mouseover(function () {
                 $("div").addClass("colorfondo");
-                if($(this).hasClass("clase")){
-                    $(this).addClass("color");
                 }
-            });
+            );
 
             $("a").mouseout(function () {
                 $("div").removeClass("colorfondo");
-                if ($(this).hasClass("clase")){
-                    $(this).removeClass("color");
                 }
-            });
+            );
         });
     </script>
 
@@ -36,7 +32,7 @@
 </head>
 <body>
 <div>
-    <a href="#" class="clase">Texto del enlace</a>
+    <a href="#">Texto del enlace</a>
 </div>
 </body>
 </html>
