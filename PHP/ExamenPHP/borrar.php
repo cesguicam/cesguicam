@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actualizar</title>
+    <title>Borrar</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
@@ -12,20 +12,17 @@
     <div class="container">
         <?php
 
-            $idAlumno = trim(htmlspecialchars($_REQUEST["idAlumno"], ENT_QUOTES, "UTF-8"));
-            $nombre = trim(htmlspecialchars($_REQUEST["nombre"], ENT_QUOTES, "UTF-8"));
-            $email = trim(htmlspecialchars($_REQUEST["email"], ENT_QUOTES, "UTF-8"));
-            $curso = trim(htmlspecialchars($_REQUEST["curso"], ENT_QUOTES, "UTF-8"));
+            $idanimal = trim(htmlspecialchars($_REQUEST["ID_animal"], ENT_QUOTES, "UTF-8"));
             
-            $conexion = mysqli_connect("localhost", "root", "ANNHFWU2K", "cursophp") 
+            $conexion = mysqli_connect("localhost", "root", "ANNHFWU2K", "examenphp") 
                             or die("Problemas de Conexión");
             
-            $sql = "UPDATE alumnos SET nombre='$nombre', mail='$email', codigocurso=$curso WHERE idAlumno = $idAlumno";
+            $sql = "DELETE FROM animales WHERE ID_animal = $idanimal";
 
             mysqli_query($conexion, $sql) 
                         or die("Problemas en el delete: ".mysqli_error($conexion));
 
-            header("Location: index.php");
+            header("Location: consultar2.php");
 
             mysqli_close($conexion);            
         ?>

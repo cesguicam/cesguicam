@@ -26,8 +26,8 @@
             echo "<td>". $reg['nombre'] . "</td>";
             echo "<td>". $reg['mail'] . "</td>";
             echo "<td>". $reg['nombreCurso'] . "</td>";
-            echo "<td>". "<a href='borrar.php?idAlumno=$reg[idAlumno]' class='btn btn-danger btn-sm'>Borrar</a>" . "</td>";
-            echo "<td>". "<a href='actualizar.php?idAlumno=$reg[idAlumno]' class='btn btn-primary btn-sm'>Actualizar</a>" . "</td>";
+            echo "<td>" . "<a href='actualizar.php?idAlumno=$reg[idAlumno]' class='btn btn-primary btn-sm'>Actualizar</a>
+                               <a href='borrar.php?idAlumno=$reg[idAlumno]' class='btn btn-danger btn-sm'>Borrar</a>" . "</td>";
             echo "</tr>";
         }
         echo "</table>";

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,25 +8,25 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color: #4cb9ac;">
     <div class="container">
         <?php
 
-            $idAlumno = trim(htmlspecialchars($_REQUEST["idAlumno"], ENT_QUOTES, "UTF-8"));
+            $ID_animal = trim(htmlspecialchars($_REQUEST["ID_animal"], ENT_QUOTES, "UTF-8"));
             
-            $conexion = mysqli_connect("localhost", "root", "ANNHFWU2K", "cursophp") 
+            $conexion = mysqli_connect("localhost", "root", "ANNHFWU2K", "examenphp") 
                             or die("Problemas de Conexión");
             
-            $sql = "SELECT * FROM alumnos WHERE idAlumno = $idAlumno";
+            $sql = "SELECT * FROM animales WHERE ID_animal = $ID_animal";
 
             $registro = mysqli_query($conexion, $sql) 
                         or die("Problemas en el delete: ".mysqli_error($conexion));
 
             if ($reg = mysqli_fetch_array($registro)) {
             ?>
-                <form action="actualizar01.php" method="post">
-                    <input type="hidden" name="idAlumno" id="idAlumno"
-                        value="<?php echo $reg['idAlumno'] ?>">
+                <form action="actualizar2.php" method="post">
+                    <input type="hidden" name="ID_animal" id="ID_animal"
+                        value="<?php echo $reg['ID_animal'] ?>">
                     
                     <div class="form-group">
                         <label for="nombre">Nombre</label>
@@ -34,27 +34,33 @@
                     </div>
             
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" name="email" id="email" value="<?php echo $reg['mail'] ?>">
+                        <label for="familia">Familia</label>
+                        <input type="text" class="form-control" name="familia" id="familia" value="<?php echo $reg['familia'] ?>">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="edad">Edad</label>
+                        <input type="number" class="form-control" name="edad" id="edad" value="<?php echo $reg['edad'] ?>">
                     </div>
             
+            
                     <div class="form-group">
-                        <label for="curso">Curso</label>
-                        <select name="curso" class="form-control" id="curso">
+                        <label for="tipo">Tipo</label>
+                        <select name="tipo" class="form-control" id="tipo">
                             <?php
-                            $conexion = mysqli_connect("localhost", "root", "ANNHFWU2K", "cursophp") 
+                            $conexion = mysqli_connect("localhost", "root", "ANNHFWU2K", "examenphp") 
                                             or die("Problemas de Conexión");
 
-                            $sql = "SELECT idCurso, nombreCurso FROM cursos";
+                            $sql = "SELECT ID_animal, tipo FROM animales";
 
                             $registros = mysqli_query($conexion, $sql) 
                                     or die("Problemas en select:".mysqli_error($conexion));
 
                             while($regC=mysqli_fetch_array($registros)) {
-                                if ($regC['idCurso'] == $reg['codigocurso']) {
-                                    echo "<option value='$regC[idCurso]' selected> $regC[nombreCurso] </option>";
+                                if ($regC['ID_animal'] == $reg['ID_animal']) {
+                                    echo "<option value='$regC[ID_animal]' selected> $regC[tipo] </option>";
                                 } else {
-                                    echo "<option value='$regC[idCurso]'> $regC[nombreCurso] </option>";
+                                    echo "<option value='$regC[ID_animal]'> $regC[tipo] </option>";
                                 }                                
                             }
                             ?>

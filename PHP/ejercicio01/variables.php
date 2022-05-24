@@ -10,7 +10,7 @@
     <?php
         echo "hola";
         echo "<br><b>Hola a todos</b>";
-        print "<p>Hola</p>\n";  // \n es un salto de linea como un br (print y echo tienen la misma funcion)
+        print "<p>Hola print</p>\n";  // \n es un salto de linea como un br (print y echo tienen la misma funcion)
 
         $saludo ="HOLAAAAA";
         echo $saludo;
