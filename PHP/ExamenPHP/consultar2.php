@@ -19,13 +19,14 @@
           <h2>Consultar</h2>
 
           <?php
+
     $conexion = mysqli_connect("localhost", "root", "ANNHFWU2K", "examenphp") or die("problemas de conexíon");
 
     $sql = "SELECT * FROM animales";
 
     $registros = mysqli_query($conexion, $sql) or die("Problema en la consulta: ". mysqli_error($conexion));
     echo "<table class='table'>";  
-  
+
       echo"<thead><th>ID_animal</th><th>Nombre</th><th>Familia</th><th>Edad</th><th>Tipo</th></thead>";
     while ($reg=mysqli_fetch_array($registros)){
         echo "<tr>";
@@ -34,8 +35,8 @@
         echo "<td>". $reg['familia'] . "</td>";
         echo "<td>". $reg['edad'] . "</td>";
         echo "<td>". $reg['tipo'] . "</td>";
-        echo "<td>" . "<a href='actualizar.php?idAlumno=$reg[ID_animal]' class='btn btn-primary btn-sm'>Actualizar</a>
-                               <a href='borrar.php?idAlumno=$reg[ID_animal]' class='btn btn-danger btn-sm'>Borrar</a>" . "</td>";
+        echo "<td>" . "<a href='actualizar.php?ID_animal=$reg[ID_animal]' class='btn btn-primary btn-sm'>Actualizar</a>
+                               <a href='borrar.php?ID_animal=$reg[ID_animal]' class='btn btn-danger btn-sm'>Borrar</a>" . "</td>";
             echo "</tr>";
         echo "</tr>";
     }

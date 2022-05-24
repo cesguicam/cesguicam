@@ -12,12 +12,12 @@
 
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <script type="text/javascript" src="/PHP/"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
    
-  <script>
+  <script type="text/javascript">
     $(document).ready(function(){
       $("button#oculto").click(function () {
-        $("#foto").toggleClass("ocultarmostrar");
+        $("#capaBD").toggleClass("ocultarmostrar");
       });
     });
   </script>
@@ -108,7 +108,6 @@
             <h2><a href="consultar.php" style="text-decoration: none" class="text-danger">Listar Todos</a></h2>
             <p class="lead">Esta opción muestra toda la informacion de la base de datos.</p>
           </div>
-          <div class="clearfix visible-md-block visible-sm-block"></div>
           <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
             <span class="fa fa-file"></span>
             <h2><a href="#" style="text-decoration: none" class="text-danger">Consultar</a></h2>
@@ -116,12 +115,14 @@
           </div>
 
         </div>
+        <br><br><br><br>
 
         <button type="button" class="btn btn-success" id="oculto">Esquema base de datos</button>
         <br>
-
-
-        <img src="image/foto BDD PHP.PNG" id="foto">
+        <div id="capaBD" class="ocultarmostrar">
+          <img src="image/foto BDD PHP.PNG" id="foto" >
+        </div>
+        
 
         <br>
       </div>
