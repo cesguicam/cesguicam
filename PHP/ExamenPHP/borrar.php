@@ -22,7 +22,7 @@
             mysqli_query($conexion, $sql) 
                         or die("Problemas en el delete: ".mysqli_error($conexion));
 
-            header("Location: consultar2.php");
+            header("Location: consultar.php");
 
             mysqli_close($conexion);            
         

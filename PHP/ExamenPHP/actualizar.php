@@ -46,27 +46,23 @@
             
                     <div class="form-group">
                         <label for="tipo">Tipo</label>
-                        <select name="tipo" class="form-control" id="tipo">
-                            <?php
-                            $conexion = mysqli_connect("localhost", "root", "ANNHFWU2K", "examenphp") 
-                                            or die("Problemas de Conexión");
+                        <select name="ID_tipo" class="form-control" id="tipo">
+                    <?php
+                    $conexion = mysqli_connect("localhost", "root", "ANNHFWU2K", "examenphp") 
+                                    or die("Problemas de Conexión");
 
-                            $sql = "SELECT ID_animal, tipo FROM animales";
+                    $sql = "SELECT ID_tipo, tipo FROM tipos";
 
-                            $registros = mysqli_query($conexion, $sql) 
-                                    or die("Problemas en select:".mysqli_error($conexion));
+                    $registros = mysqli_query($conexion, $sql) 
+                            or die("Problemas en select:".mysqli_error($conexion));
 
-                            while($regC=mysqli_fetch_array($registros)) {
-                                if ($regC['ID_animal'] == $reg['ID_animal']) {
-                                    echo "<option value='$regC[ID_animal]' selected> $regC[tipo] </option>";
-                                } else {
-                                    echo "<option value='$regC[ID_animal]'> $regC[tipo] </option>";
-                                }                                
-                            }
-                            ?>
-                        </select>
+                    while($reg=mysqli_fetch_array($registros)) {
+                        echo "<option value='$reg[ID_tipo]'> $reg[tipo] </option>";
+                    }
+                    ?>
+                </select>
                     </div>
-
+                    <br>
                     <input type="submit" value="Actualizar" class="btn btn-primary btn-block">
                 </form>
             <?php

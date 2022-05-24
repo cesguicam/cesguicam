@@ -22,16 +22,16 @@
             $nombre = trim(htmlspecialchars($_REQUEST["nombre"], ENT_QUOTES, "UTF-8"));
             $familia = trim(htmlspecialchars($_REQUEST["familia"], ENT_QUOTES, "UTF-8"));
             $edad = trim(htmlspecialchars($_REQUEST["edad"], ENT_QUOTES, "UTF-8"));
-            $tipo = trim(htmlspecialchars($_REQUEST["tipo"], ENT_QUOTES, "UTF-8"));
+            $tipo = trim(htmlspecialchars($_REQUEST["ID_tipo"], ENT_QUOTES, "UTF-8"));
             $conexion = mysqli_connect("localhost", "root", "ANNHFWU2K", "examenphp") or die("problemas de conexíon");
 
-            $sql ="INSERT INTO animales(nombre, familia, edad, tipo) VALUES ('$nombre','$familia','$edad','$tipo')";
+            $sql ="INSERT INTO animales(nombre, familia, edad, ID_tipo) VALUES ('$nombre','$familia','$edad','$tipo')";
 //es el boton de ejecutar del workbench
             mysqli_query($conexion, $sql) or die("problemas en el insert: ".mysqli_error($conexion));
             mysqli_close($conexion);
             print"<h2>Se ha insertado con exito su animal</h2>";
                     ?>
-        <form method="post" action="consultar2.php"><input type="submit" value="Consultar" class="btn btn-primary btn-block"></form>
+        <form method="post" action="consultar.php"><input type="submit" value="Consultar" class="btn btn-primary btn-block"></form>
         </form>
 
     </div>

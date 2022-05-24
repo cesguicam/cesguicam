@@ -15,7 +15,7 @@
 </head>
 
 <body   style="background-color: #4cb9ac;">
-<div class="container" background-color: #0f8f57;>
+<div class="container" >
         <h2>Insertar Animal</h2>
         <form method="post" action="insertar2.php">
            
@@ -36,18 +36,18 @@
 
             <div class="form-group">
                 <label for="tipo">Tipo</label>
-                <select name="tipo" class="form-control" id="tipo">
+                <select name="ID_tipo" class="form-control" id="tipo">
                     <?php
                     $conexion = mysqli_connect("localhost", "root", "ANNHFWU2K", "examenphp") 
                                     or die("Problemas de Conexión");
 
-                    $sql = "SELECT ID_animal, tipo FROM animales";
+                    $sql = "SELECT ID_tipo, tipo FROM tipos";
 
                     $registros = mysqli_query($conexion, $sql) 
                             or die("Problemas en select:".mysqli_error($conexion));
 
                     while($reg=mysqli_fetch_array($registros)) {
-                        echo "<option value='$reg[tipo]'> $reg[tipo] </option>";
+                        echo "<option value='$reg[ID_tipo]'> $reg[tipo] </option>";
                     }
                     ?>
                 </select>
@@ -57,7 +57,7 @@
             <br>
         </form>
         <br>
-        <form method="post" action="consultar2.php"><input type="submit" value="Consultar" class="btn btn-primary btn-block"></form>
+        <form method="post" action="consultar.php"><input type="submit" value="Consultar" class="btn btn-primary btn-block"></form>
                     
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

@@ -16,17 +16,17 @@
             $nombre = trim(htmlspecialchars($_REQUEST["nombre"], ENT_QUOTES, "UTF-8"));
             $familia = trim(htmlspecialchars($_REQUEST["familia"], ENT_QUOTES, "UTF-8"));
             $edad = trim(htmlspecialchars($_REQUEST["edad"], ENT_QUOTES, "UTF-8"));
-            $tipo = trim(htmlspecialchars($_REQUEST["tipo"], ENT_QUOTES, "UTF-8"));
+            $tipo = trim(htmlspecialchars($_REQUEST["ID_tipo"], ENT_QUOTES, "UTF-8"));
             
             $conexion = mysqli_connect("localhost", "root", "ANNHFWU2K", "examenphp") 
                             or die("Problemas de Conexión");
             
-            $sql = "UPDATE animales SET nombre='$nombre', familia='$familia', edad=$edad, tipo='$tipo' WHERE ID_animal = $ID_animal";
+            $sql = "UPDATE animales SET nombre='$nombre', familia='$familia', edad=$edad, ID_tipo='$tipo' WHERE ID_animal = $ID_animal";
 
             mysqli_query($conexion, $sql) 
                         or die("Problemas en el delete: ".mysqli_error($conexion));
 
-            header("Location: consultar2.php");
+            header("Location: consultar.php");
 
             mysqli_close($conexion);            
         ?>

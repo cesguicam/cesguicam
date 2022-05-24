@@ -21,24 +21,24 @@
           <?php
     $conexion = mysqli_connect("localhost", "root", "ANNHFWU2K", "examenphp") or die("problemas de conexíon");
 
-    $sql = "SELECT a.ID_animal, a.nombre, a.familia, a.edad, a.tipo, h.continente, h.region, h.dieta, h.domestico FROM animales a LEFT JOIN habitat h ON a.ID_animal=h.ID_animal";
+    $sql = "SELECT a.ID_animal, a.nombre, a.familia, a.edad, a.ID_tipo, t.tipo FROM animales a LEFT JOIN tipos t ON a.ID_tipo=t.ID_tipo";
 
     $registros = mysqli_query($conexion, $sql) or die("Problema en la consulta: ". mysqli_error($conexion));
     echo "<table class='table'>";  
   
-      echo"<thead><th>ID_animal</th><th>Nombre</th><th>Familia</th><th>Edad</th><th>Tipo</th><th>Continente</th><th>Region</th><th>Dieta</th><th>Domestico</th></thead>";
+      echo"<thead><th>ID_animal</th><th>Nombre</th><th>Familia</th><th>Edad</th><th>ID_Tipo</th><th>Tipo</th></thead>";
     while ($reg=mysqli_fetch_array($registros)){
         echo "<tr>";
         echo "<td>". $reg['ID_animal'] . "</td>";
         echo "<td>". $reg['nombre'] . "</td>";
         echo "<td>". $reg['familia'] . "</td>";
         echo "<td>". $reg['edad'] . "</td>";
+        echo "<td>". $reg['ID_tipo'] . "</td>";
         echo "<td>". $reg['tipo'] . "</td>";
-        echo "<td>". $reg['continente'] . "</td>";
-        echo "<td>". $reg['region'] . "</td>";
-        echo "<td>". $reg['dieta'] . "</td>";
-        echo "<td>". $reg['domestico'] . "</td>";
+        echo "<td>" . "<a href='actualizar.php?ID_animal=$reg[ID_animal]' class='btn btn-primary btn-sm'>Actualizar</a>
+        <a href='borrar.php?ID_animal=$reg[ID_animal]' class='btn btn-danger btn-sm'>Borrar</a>" . "</td>";
         echo "</tr>";
+       
     }
     echo "</table>";
     mysqli_close($conexion);
