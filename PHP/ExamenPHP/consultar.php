@@ -43,6 +43,8 @@
     echo "</table>";
     mysqli_close($conexion);
 ?>
+<br>
+<button type="button" class="btn btn-success"><a href="index.html" style="text-decoration: none; color: white;">Página principal</a></button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
