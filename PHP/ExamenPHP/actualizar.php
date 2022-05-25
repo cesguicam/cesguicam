@@ -29,23 +29,23 @@
                         value="<?php echo $reg['ID_animal'] ?>">
                     
                     <div class="form-group">
-                        <label for="nombre">Nombre</label>
+                        <label for="nombre">Name</label>
                         <input type="text" class="form-control" name="nombre" id="nombre" autofocus value="<?php echo $reg['nombre'] ?>">
                     </div>
             
                     <div class="form-group">
-                        <label for="familia">Familia</label>
+                        <label for="familia">Family</label>
                         <input type="text" class="form-control" name="familia" id="familia" value="<?php echo $reg['familia'] ?>">
                     </div>
 
                     <div class="form-group">
-                        <label for="edad">Edad</label>
+                        <label for="edad">Age</label>
                         <input type="number" class="form-control" name="edad" id="edad" value="<?php echo $reg['edad'] ?>">
                     </div>
             
             
                     <div class="form-group">
-                        <label for="tipo">Tipo</label>
+                        <label for="tipo">Type</label>
                         <select name="ID_tipo" class="form-control" id="tipo">
                     <?php
                     $conexion = mysqli_connect("localhost", "root", "ANNHFWU2K", "examenphp") 
@@ -63,7 +63,7 @@
                 </select>
                     </div>
                     <br>
-                    <input type="submit" value="Actualizar" class="btn btn-primary btn-block">
+                    <input type="submit" value="Update" class="btn btn-primary btn-block">
                 </form>
             <?php
             }

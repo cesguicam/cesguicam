@@ -78,7 +78,7 @@
                 $registros = mysqli_query($conexion, $sql) or die("Problema en la consulta: ". mysqli_error($conexion));
                  echo "<table class='table'>";  
 
-                 echo"<thead><th>ID_animal</th><th>Nombre</th><th>Familia</th><th>Edad</th><th>ID_Tipo</th><th>Tipo</th></thead>";
+                 echo"<thead><th>ID_animal</th><th>Name</th><th>Family</th><th>Age</th><th>ID_Tipo</th><th>Type</th></thead>";
                 while ($reg=mysqli_fetch_array($registros)){
                  echo "<tr>";
                     echo "<td>". $reg['ID_animal'] . "</td>";
@@ -100,7 +100,7 @@
         ?>
         <form method="post" action="condicion.php">           
             <br>
-            <input type="submit" value="Otra consulta" class="btn btn-primary btn-block"><br><br><button type="button" class="btn btn-success"><a href="index.html" style="text-decoration: none; color: white;">Página principal</a></button>
+            <input type="submit" value="Another consult" class="btn btn-primary btn-block"><br><br><button type="button" class="btn btn-success"><a href="index.html" style="text-decoration: none; color: white;">Homepage</a></button>
             <br>
         </form>
     </div>

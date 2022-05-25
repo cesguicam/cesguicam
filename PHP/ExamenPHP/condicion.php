@@ -16,11 +16,11 @@
 
 <body style="background-color: #4cb9ac;">
 <div class="container" >
-        <h2>Inserte su consulta</h2>
+        <h2>Insert your consult</h2>
         <form method="post" action="condicion2.php">
 
             <div class="form-group">
-                <label for="tipo">Tipo de Animal</label>
+                <label for="tipo">Type of animal</label>
                 <select name="selecto" class="form-control" id="tipo">
                     <option value="1">Mamíferos</option>
                     <option value="2">Ovíparos</option>
@@ -28,7 +28,7 @@
                 </select>
             </div>
                     <br>
-            <input type="submit" value="Consultar" class="btn btn-primary btn-block">
+            <input type="submit" value="Consult" class="btn btn-primary btn-block">
             <br>
         </form>
                     

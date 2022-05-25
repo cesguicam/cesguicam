@@ -29,9 +29,9 @@
 //es el boton de ejecutar del workbench
             mysqli_query($conexion, $sql) or die("problemas en el insert: ".mysqli_error($conexion));
             mysqli_close($conexion);
-            print"<h2>Se ha insertado con exito su animal</h2>";
+            print"<h2>Your animal has been successfully inserted</h2>";
                     ?>
-        <form method="post" action="consultar.php"><input type="submit" value="Consultar" class="btn btn-primary btn-block"></form>
+        <form method="post" action="consultar.php"><input type="submit" value="Consult" class="btn btn-primary btn-block"></form>
         </form>
 
     </div>

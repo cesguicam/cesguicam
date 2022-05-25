@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animales</title>
+    <title>Animals</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -16,7 +16,7 @@
 
 <body style="background-color: #4cb9ac;">
     <div class="container">
-          <h2>Listar Todos</h2>
+          <h2>list all</h2>
 
           <?php
     $conexion = mysqli_connect("localhost", "root", "ANNHFWU2K", "examenphp") or die("problemas de conexíon");
@@ -26,7 +26,7 @@
     $registros = mysqli_query($conexion, $sql) or die("Problema en la consulta: ". mysqli_error($conexion));
     echo "<table class='table'>";  
   
-      echo"<thead><th>ID_animal</th><th>Nombre</th><th>Familia</th><th>Edad</th><th>ID_Tipo</th><th>Tipo</th></thead>";
+      echo"<thead><th>ID_animal</th><th>Name</th><th>Family</th><th>Age</th><th>ID_Tipo</th><th>Type</th></thead>";
     while ($reg=mysqli_fetch_array($registros)){
         echo "<tr>";
         echo "<td>". $reg['ID_animal'] . "</td>";
@@ -35,8 +35,8 @@
         echo "<td>". $reg['edad'] . "</td>";
         echo "<td>". $reg['ID_tipo'] . "</td>";
         echo "<td>". $reg['tipo'] . "</td>";
-        echo "<td>" . "<a href='actualizar.php?ID_animal=$reg[ID_animal]' class='btn btn-primary btn-sm'>Actualizar</a>
-        <a href='borrar.php?ID_animal=$reg[ID_animal]' class='btn btn-danger btn-sm'>Borrar</a>" . "</td>";
+        echo "<td>" . "<a href='actualizar.php?ID_animal=$reg[ID_animal]' class='btn btn-primary btn-sm'>Update</a>
+        <a href='borrar.php?ID_animal=$reg[ID_animal]' class='btn btn-danger btn-sm'>Delete</a>" . "</td>";
         echo "</tr>";
        
     }
@@ -44,7 +44,7 @@
     mysqli_close($conexion);
 ?>
 <br>
-<button type="button" class="btn btn-success"><a href="index.html" style="text-decoration: none; color: white;">Página principal</a></button>
+<button type="button" class="btn btn-success"><a href="index.html" style="text-decoration: none; color: white;">Homepage</a></button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

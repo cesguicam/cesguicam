@@ -16,26 +16,26 @@
 
 <body   style="background-color: #4cb9ac;">
 <div class="container" >
-        <h2>Insertar Animal</h2>
+        <h2>Insert Animal</h2>
         <form method="post" action="insertar2.php">
            
         <div class="form-group">
-                <label for="nombre">Nombre</label>
+                <label for="nombre">Name</label>
                 <input type="text" class="form-control" name="nombre" id="nombre">
             </div>
             
             <div class="form-group">
-                <label for="familia">Familia</label>
+                <label for="familia">Family</label>
                 <input type="text" class="form-control" name="familia" id="familia">
             </div>
             
             <div class="form-group">
-                <label for="email">Edad</label>
+                <label for="email">Age</label>
                 <input type="number" class="form-control" name="edad" id="edad">
             </div>
 
             <div class="form-group">
-                <label for="tipo">Tipo</label>
+                <label for="tipo">Type</label>
                 <select name="ID_tipo" class="form-control" id="tipo">
                     <?php
                     $conexion = mysqli_connect("localhost", "root", "ANNHFWU2K", "examenphp") 
@@ -53,11 +53,11 @@
                 </select>
             </div>
                     <br>
-            <input type="submit" value="Insertar" class="btn btn-primary btn-block">
+            <input type="submit" value="Insert" class="btn btn-primary btn-block">
             <br>
         </form>
         <br>
-        <form method="post" action="consultar.php"><input type="submit" value="Consultar" class="btn btn-primary btn-block"></form>
+        <form method="post" action="consultar.php"><input type="submit" value="Consult" class="btn btn-primary btn-block"></form>
                     
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
