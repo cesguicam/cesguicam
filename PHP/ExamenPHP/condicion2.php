@@ -16,7 +16,7 @@
 
 <body style="background-color: #4cb9ac;">
 <div class="container" >
-        <h2>Su Consulta</h2>
+        <h2>Your consult</h2>
         <?php
         
             $conexion = mysqli_connect("localhost", "root", "ANNHFWU2K", "examenphp") or die("problemas de conexíon");
@@ -30,7 +30,7 @@
                 $registros = mysqli_query($conexion, $sql) or die("Problema en la consulta: ". mysqli_error($conexion));
                  echo "<table class='table'>";  
 
-                 echo"<thead><th>ID_animal</th><th>Nombre</th><th>Familia</th><th>Edad</th><th>ID_Tipo</th><th>Tipo</th></thead>";
+                 echo"<thead><th>ID_animal</th><th>Name</th><th>Family</th><th>Age</th><th>ID_Tipo</th><th>Type</th></thead>";
                 while ($reg=mysqli_fetch_array($registros)){
                  echo "<tr>";
                     echo "<td>". $reg['ID_animal'] . "</td>";
@@ -54,7 +54,7 @@
                 $registros = mysqli_query($conexion, $sql) or die("Problema en la consulta: ". mysqli_error($conexion));
                  echo "<table class='table'>";  
 
-                 echo"<thead><th>ID_animal</th><th>Nombre</th><th>Familia</th><th>Edad</th><th>ID_Tipo</th><th>Tipo</th></thead>";
+                 echo"<thead><th>ID_animal</th><th>Name</th><th>Family</th><th>Age</th><th>ID_Tipo</th><th>Type</th></thead>";
                 while ($reg=mysqli_fetch_array($registros)){
                  echo "<tr>";
                     echo "<td>". $reg['ID_animal'] . "</td>";
