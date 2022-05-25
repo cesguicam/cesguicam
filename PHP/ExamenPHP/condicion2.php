@@ -98,12 +98,9 @@
 
         
         ?>
-        <form method="post" action="condicion2.php">
-
-            
-            </div>
+        <form method="post" action="condicion.php">           
             <br>
-            <input type="submit" value="Consultar" class="btn btn-primary btn-block">
+            <input type="submit" value="Otra consulta" class="btn btn-primary btn-block"><br><br><button type="button" class="btn btn-success"><a href="index.html" style="text-decoration: none; color: white;">Página principal</a></button>
             <br>
         </form>
     </div>
